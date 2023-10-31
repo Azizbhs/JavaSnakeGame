@@ -34,18 +34,6 @@ public class Panel extends JPanel implements ActionListener{
 
     }
 
-    public void move(){
-
-    }
-    
-    public void checkApple(){
-
-    }
-
-    public void checkCollisions(){
-
-    }
-
     public void gameOver(Graphics g){
 
     }
@@ -55,8 +43,8 @@ public class Panel extends JPanel implements ActionListener{
     }
         
     public class MyKeyAdapter extends KeyAdapter{
-
+         
     }
 
-    
+
 }
