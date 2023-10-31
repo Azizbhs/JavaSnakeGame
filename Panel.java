@@ -34,19 +34,25 @@ public class Panel extends JPanel implements ActionListener{
         startGame();
     }
     
-     public void startGame(){
-
+    public void startGame(){
+        newApple();
+        run = true;
+        timer = new Timer(delay, this);
+        timer.start();
     }
 
     public void paintComponent(Graphics g){
-
+        super.paintComponent(g);
+        draw(g);
     }
     public void draw(Graphics g){
-
+        for(int i=0; i<screen_height/unit_size; i+++ ){
+            g.drawLine(i*unit_size, 0, i*unit_size, screen_height);
+        }
     }
 
     public void newApple(){
-        
+
     }
     
     public void move(){
