@@ -50,11 +50,13 @@ public class Panel extends JPanel implements ActionListener{
             g.drawLine(i*unit_size, 0, i*unit_size, screen_height);
             g.drawLine(0, i*unit_size, screen_width, i*unit_size);
         }
+        g.setColor(Color.red);
+        g.fillOval(applex, appley, unit_size, unit_size);
     }
 
     public void newApple(){
         applex = random.nextInt((int)(screen_width/unit_size))*unit_size;
-
+        appley = random.nextInt((int)(screen_height /unit_size))*unit_size;
     }
     
     public void move(){
