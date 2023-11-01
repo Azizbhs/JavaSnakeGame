@@ -53,6 +53,7 @@ public class Panel extends JPanel implements ActionListener{
     }
 
     public void newApple(){
+        applex = random.nextInt((int)(screen_width/unit_size))*unit_size;
 
     }
     
