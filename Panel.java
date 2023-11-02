@@ -46,10 +46,10 @@ public class Panel extends JPanel implements ActionListener{
         draw(g);
     }
     public void draw(Graphics g){
-        for(int i=0; i<screen_height/unit_size; i++ ){
+        /*for(int i=0; i<screen_height/unit_size; i++ ){
             g.drawLine(i*unit_size, 0, i*unit_size, screen_height);
             g.drawLine(0, i*unit_size, screen_width, i*unit_size);
-        }
+        }*/
         g.setColor(Color.red);
         g.fillOval(applex, appley, unit_size, unit_size);
     }
