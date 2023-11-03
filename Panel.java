@@ -107,6 +107,7 @@ public class Panel extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
       if(running){
         move();
+        checkApple();
       }
     }
         
