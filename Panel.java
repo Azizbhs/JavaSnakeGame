@@ -52,6 +52,16 @@ public class Panel extends JPanel implements ActionListener{
         }*/
         g.setColor(Color.red);
         g.fillOval(applex, appley, unit_size, unit_size);
+
+        for(int i =0; i<bodyparts; i++){
+            if(i==0){
+                g.setColor(Color.green);
+                g.fillRect(x[i], y[i], unit_size, unit_size);
+            }else{
+                g.setColor(new Color(45,180,0));
+                g.fillRect(x[i], y[i], unit_size, unit_size);
+            }
+        }
     }
 
     public void newApple(){
