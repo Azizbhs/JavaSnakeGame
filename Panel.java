@@ -108,6 +108,7 @@ public class Panel extends JPanel implements ActionListener{
       if(running){
         move();
         checkApple();
+        checkCollisions();
       }
     }
         
