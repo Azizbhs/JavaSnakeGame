@@ -103,10 +103,15 @@ public class Panel extends JPanel implements ActionListener{
         running = false;
        }
      }
-     //checks left border collisions
+     //left border check
      if(x[0]<0){
         running = false;
      }
+     //top border check
+     if(x[0]> screen_width){
+        running = false;
+     }
+     
 }
 
     public void gameOver(Graphics g){
