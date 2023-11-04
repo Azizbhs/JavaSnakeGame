@@ -115,6 +115,12 @@ public class Panel extends JPanel implements ActionListener{
      if(y[0] < 0){
         running = false;
      }
+     //bottom border check
+     if(y[0] > screen_height){
+        running = false;
+     }
+
+     
      
 }
 
