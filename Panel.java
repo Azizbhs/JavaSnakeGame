@@ -36,7 +36,7 @@ public class Panel extends JPanel implements ActionListener{
     
     public void startGame(){
         newApple();
-        run = true;
+        running = true;
         timer = new Timer(delay, this);
         timer.start();
     }
@@ -110,6 +110,7 @@ public class Panel extends JPanel implements ActionListener{
         checkApple();
         checkCollisions();
       }
+      repaint();
     }
         
     public class MyKeyAdapter extends KeyAdapter{
