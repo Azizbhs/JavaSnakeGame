@@ -97,8 +97,17 @@ public class Panel extends JPanel implements ActionListener{
     }
     
     public void checkCollisions(){
-
-    }
+        //only checks head
+     for(int i = bodyparts; i>0; i--){
+       if((x[0] == x[i]) && (y[0]==y[i])){
+        running = false;
+       }
+     }
+     //checks left border collisions
+     if(x[0]<0){
+        running = false;
+     }
+}
 
     public void gameOver(Graphics g){
 
