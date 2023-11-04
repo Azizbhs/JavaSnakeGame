@@ -21,7 +21,7 @@ public class Panel extends JPanel implements ActionListener{
     int applex;
     int appley;
     char direction = 'R';
-    boolean run = false;
+    boolean running = false;
     Timer timer;
     Random random;
 
