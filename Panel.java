@@ -119,9 +119,10 @@ public class Panel extends JPanel implements ActionListener{
      if(y[0] > screen_height){
         running = false;
      }
-
-     
-     
+     //stop timer
+     if(!running){
+        timer.stop();
+     }  
 }
 
     public void gameOver(Graphics g){
