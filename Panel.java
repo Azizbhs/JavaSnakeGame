@@ -96,6 +96,7 @@ public class Panel extends JPanel implements ActionListener{
        if((x[0] == applex) && (y[0] == appley)){
         bodyparts++;
         applesEaten++;
+        newApple();
        }
     }
     
