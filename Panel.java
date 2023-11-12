@@ -1,5 +1,3 @@
-import javax.swing.JPanel;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -132,7 +130,10 @@ public class Panel extends JPanel implements ActionListener{
 }
 
     public void gameOver(Graphics g){
-
+      g.setColor(Color.red);
+      g.setFont(new Font("Serif", Font.PLAIN, 50));
+      FontMetrics metrics = getFontMetrics(g.getFont());
+      g.drawString("Game Over", (screen_width - metrics.stringWidth("Game Over")), screen_height/2);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
