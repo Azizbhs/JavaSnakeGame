@@ -133,7 +133,7 @@ public class Panel extends JPanel implements ActionListener{
       g.setColor(Color.red);
       g.setFont(new Font("Serif", Font.PLAIN, 50));
       FontMetrics metrics = getFontMetrics(g.getFont());
-      g.drawString("Game Over", (screen_width - metrics.stringWidth("Game Over")), screen_height/2);
+      g.drawString("Game Over", (screen_width - metrics.stringWidth("Game Over"))/2, screen_height/2);
     }
     @Override
     public void actionPerformed(ActionEvent e) {
