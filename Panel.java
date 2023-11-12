@@ -46,6 +46,7 @@ public class Panel extends JPanel implements ActionListener{
         draw(g);
     }
     public void draw(Graphics g){
+      if(running){
         /*for(int i=0; i<screen_height/unit_size; i++ ){
             g.drawLine(i*unit_size, 0, i*unit_size, screen_height);
             g.drawLine(0, i*unit_size, screen_width, i*unit_size);
@@ -62,6 +63,7 @@ public class Panel extends JPanel implements ActionListener{
                 g.fillRect(x[i], y[i], unit_size, unit_size);
             }
         }
+      }else{gameOver(g);}
     }
 
     public void newApple(){
