@@ -61,8 +61,8 @@ public class Panel extends JPanel implements ActionListener{
                 g.fillRect(x[i], y[i], unit_size, unit_size);
             }
         }
-         g.setColor(Color.red);
-      g.setFont(new Font("Serif", Font.BOLD, 35));
+      g.setColor(Color.red);
+      g.setFont(new Font("Ink Free", Font.BOLD, 35));
       FontMetrics metrics = getFontMetrics(g.getFont());
       g.drawString("Score: "+applesEaten, (screen_width - metrics.stringWidth("Score" + applesEaten))/2, g.getFont().getSize());
       }else{gameOver(g);}
