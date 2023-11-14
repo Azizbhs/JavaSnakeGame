@@ -136,7 +136,7 @@ public class Panel extends JPanel implements ActionListener{
     public void gameOver(Graphics g){
       //Game over text
       g.setColor(Color.red);
-      g.setFont(new Font("Serif", Font.PLAIN, 50));
+      g.setFont(new Font("Ink Free", Font.PLAIN, 50));
       FontMetrics metrics = getFontMetrics(g.getFont());
       g.drawString("Game Over", (screen_width - metrics.stringWidth("Game Over"))/2, screen_height/2);
       //score after game over
