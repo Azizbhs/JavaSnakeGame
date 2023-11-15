@@ -58,6 +58,7 @@ public class Panel extends JPanel implements ActionListener{
                 g.fillRect(x[i], y[i], unit_size, unit_size);
             }else{
                 g.setColor(new Color(45,180,0));
+                g.setColor(new Color(i));;
                 g.fillRect(x[i], y[i], unit_size, unit_size);
             }
         }
